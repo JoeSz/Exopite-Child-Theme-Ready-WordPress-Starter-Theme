@@ -24,10 +24,14 @@ My ultra-minimal CSS might make me look like theme tartare but that means less s
 * [Theme Hook Alliance](https://github.com/zamoose/themehookalliance)
 * [_s](https://github.com/Automattic/_s)
 
-Getting Started
+Getting Started (form original underscores/_s)
 ---------------
 
-If you want to keep it simple, head over to http://underscores.me and generate your `exopite` based theme from there. You just input the name of the theme you want to create, click the "Generate" button, and you get your ready-to-awesomize starter theme.
+### underscores/_s only
+
+If you want to keep it simple, head over to http://underscores.me and generate your `_s` based theme from there. You just input the name of the theme you want to create, click the "Generate" button, and you get your ready-to-awesomize starter theme.
+
+### underscores/_s only and Exopite
 
 If you want to set things up manually, download `exopite` from GitHub. The first thing you want to do is copy the `exopite` directory and change the name to something else (like, say, `megatherium`), and then you'll need to do a five-step find and replace on the name in all the templates.
 
