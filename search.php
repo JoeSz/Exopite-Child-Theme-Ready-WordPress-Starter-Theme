@@ -48,10 +48,10 @@ get_header(); ?>
 				endif; ?>
 				<?php tha_content_bottom(); ?>
 				</main><!-- #main -->
-			</section><!-- #primary -->
+			</div><!-- #primary -->
+			<?php get_sidebar(); ?>
 		</div><!-- .row -->
 	</div><!-- .container -->
 	<?php tha_content_after(); ?>
 <?php
-get_sidebar();
 get_footer();
