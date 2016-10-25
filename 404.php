@@ -67,6 +67,7 @@ get_header(); ?>
 					<?php tha_entry_after(); ?>
 				</main><!-- #main -->
 			</div><!-- #primary -->
+			<?php get_sidebar(); ?>
 		</div><!-- .row -->
 	</div><!-- .container -->
 	<?php tha_content_after(); ?>
