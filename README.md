@@ -11,6 +11,7 @@ My ultra-minimal CSS might make me look like theme tartare but that means less s
 
 * A just right amount of lean, well-commented, modern, HTML5 templates.
 * A helpful 404 template.
+* A helpful full width page template.
 * A custom header implementation in `inc/custom-header.php` just add the code snippet found in the comments of `inc/custom-header.php` to your `header.php` template.
 * Custom template tags in `inc/template-tags.php` that keep your templates clean and neat and prevent code duplication.
 * Some small tweaks in `inc/extras.php` that can improve your theming experience.
@@ -23,6 +24,7 @@ My ultra-minimal CSS might make me look like theme tartare but that means less s
 * [jQuery 2.2.4](https://github.com/jquery/jquery/tree/2.2-stable) from CDN
 * [Theme Hook Alliance](https://github.com/zamoose/themehookalliance)
 * [_s](https://github.com/Automattic/_s)
+* [JavaScript Hook and Filter system](http://stackoverflow.com/questions/20131168/jquery-javascript-hooks/20132960#20132960)
 
 Getting Started (form original underscores/_s)
 ---------------
