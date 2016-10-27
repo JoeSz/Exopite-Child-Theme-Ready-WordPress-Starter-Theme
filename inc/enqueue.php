@@ -25,6 +25,9 @@ add_action( 'wp_enqueue_scripts', 'load_exopite_styles' );
 if ( ! function_exists( 'load_exopite_scripts' ) ) {
 	function load_exopite_scripts() {
 
+        /*
+        JavaScript Hooks and Filters Object
+         */
         wp_enqueue_script( 'javascript-hooks', get_template_directory_uri() . '/js/javascript.hooks-filters.js', array(), null, true );
 
 		/*
