@@ -7,10 +7,10 @@ if ( ! function_exists( 'load_exopite_styles' ) ) {
 
 		/* Get Bootstrap 4 */
 		wp_register_style( 'bootstrap', 'http' . ( $_SERVER['SERVER_PORT'] == 443 ? 's' : '' ) . '://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css', false, 'all' );
-		wp_enqueue_style('bootstrap');
+		wp_enqueue_style( 'bootstrap' );
 
 		/* Get font awsome */
-		wp_register_style('font-awesome', 'http' . ( $_SERVER['SERVER_PORT'] == 443 ? 's' : '' ) . '://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css', false, 'all' );
+		wp_register_style( 'font-awesome', 'http' . ( $_SERVER['SERVER_PORT'] == 443 ? 's' : '' ) . '://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css', false, 'all' );
 		wp_enqueue_style( 'font-awesome' );
 
 		/* Main stylesheet */
@@ -24,6 +24,8 @@ add_action( 'wp_enqueue_scripts', 'load_exopite_styles' );
  */
 if ( ! function_exists( 'load_exopite_scripts' ) ) {
 	function load_exopite_scripts() {
+
+        wp_enqueue_script( 'javascript-hooks', get_template_directory_uri() . '/js/javascript.hooks-filters.js', array(), null, true );
 
 		/*
 		Loads jQuery from Google Library (CDN) to improve speed.
