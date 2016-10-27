@@ -24,7 +24,7 @@ tha_html_before();
 <body <?php body_class(); ?>>
 <?php tha_body_top(); ?>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'markatustools' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'exopite' ); ?></a>
 	<?php tha_header_before(); ?>
 	<header id="masthead" class="site-header" role="banner">
         <div class="container">
@@ -52,7 +52,7 @@ tha_html_before();
     		<nav id="site-navigation" class="main-navigation" role="navigation">
 				<div class="row">
 					<div class="col-md-12">
-						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'markatustools' ); ?></button>
+						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'exopite' ); ?></button>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					</div>
 				</div>
