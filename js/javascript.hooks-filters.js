@@ -38,24 +38,29 @@ var filter = {
 
     filters: {},
 
-    add: function (tag, filter) {
-        (this.filters[tag] || (this.filters[tag] = [])).push(filter);
+    add: function ( tag, filter ) {
+        ( this.filters[tag] || ( this.filters[tag] = [] ) ).push( filter );
     },
 
     apply: function (tag, val, def) {
-        if(this.filters[tag]){
-            var filters = this.filters[tag];
-            for(var i = 0; i < filters.length; i++){
-                val = filters[i](val);
+        try {
+            if ( this.filters[tag] ) {
+                var filters = this.filters[tag];
+                for( var i = 0; i < filters.length; i++ ){
+                    val = filters[i](val);
+                }
+            } else if ( def ) {
+                val = def;
             }
-        } else if (def) {
-            val = def;
+            return val;
+        } catch ( err ) {
+            console.log( err );
         }
-        return val;
+
     },
 
-    remove: function(tag) {
-        if(this.filters[tag]){
+    remove: function( tag ) {
+        if( this.filters[tag] ){
             delete this.filters[tag];
         }
     }
