@@ -61,6 +61,5 @@ tha_html_before();
         </div><!-- .container -->
 	</header><!-- #masthead -->
 	<?php tha_header_after(); ?>
-	<?php tha_content_before(); ?>
 	<div id="content" class="site-content">
-		<?php tha_content_top(); ?>
+
