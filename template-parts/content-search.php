@@ -16,7 +16,7 @@
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php exopite_posted_on(); ?>
+            <?php exopite_blog_meta(); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
@@ -26,7 +26,6 @@
 	</div><!-- .entry-summary -->
 	<?php tha_entry_content_after(); ?>
 	<footer class="entry-footer">
-		<?php exopite_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 	<?php tha_entry_bottom(); ?>
 </article><!-- #post-## -->
