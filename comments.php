@@ -94,11 +94,12 @@ if ( post_password_required() ) : ?>
 	$comment_field = '<div id="error"></div><div class="row input-group"><div class="col-xs-12 col-sm-12"><textarea class="form-control" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></div></div>';
 	$comment_notes_after = '';
 	$comment_args = array( 'fields' => apply_filters( 'comment_form_default_fields', array(
-            'author' => $author,
-            'email'  => $email,
-            'url'    => $url ) ),
-            'comment_field' => $comment_field,
-            'comment_notes_after' => $comment_notes_after,
+            'author'                    => $author,
+            'email'                     => $email,
+            'url'                       => $url ) ),
+            'comment_field'             => $comment_field,
+            'comment_notes_after'       => $comment_notes_after,
+            'class_submit'              => 'btn btn-default'
     );
     ?>
 	<?php comment_form($comment_args); ?>
