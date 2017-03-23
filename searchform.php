@@ -7,7 +7,7 @@
 defined('ABSPATH') or die( 'You cannot access this page directly.' );
 
 ?>
-<form role="search" method="get" id="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+<form role="search" method="get" id="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>" itemscope itemtype="http://schema.org/SearchAction">
     <div class="input-group search-widget">
 		<input type="text" class="form-control" placeholder="<?php echo esc_attr( 'Search…', 'exopite' ); ?>" name="s" id="search-input" value="<?php echo esc_attr( get_search_query() ); ?>" />
 		<span class="input-group-btn">

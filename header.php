@@ -24,7 +24,7 @@ tha_head_top();
 
 ?>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php
@@ -36,7 +36,7 @@ wp_head();
 
 ?>
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> itemscope="itemscope" itemtype="https://schema.org/WebPage">
 <?php
 
 // Theme Hook Alliance
@@ -51,7 +51,7 @@ tha_body_top();
     tha_header_before();
 
     ?>
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
         <div class="container">
     		<?php
 
@@ -90,7 +90,7 @@ tha_body_top();
                 </div>
     		</div><!-- .site-branding -->
 
-    		<nav id="site-navigation" class="main-navigation" role="navigation">
+    		<nav id="site-navigation" class="main-navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
 				<div class="row">
 					<div class="col-md-12">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'exopite' ); ?></button>

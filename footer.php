@@ -23,7 +23,7 @@ defined('ABSPATH') or die( 'You cannot access this page directly.' );
     tha_footer_before();
 
     ?>
-	<footer id="colophon" class="site-footer" role="contentinfo">
+	<footer id="colophon" class="site-footer" itemscope="itemscope" itemtype="https://schema.org/WPFooter">
 		<?php
 
         // Theme Hook Alliance

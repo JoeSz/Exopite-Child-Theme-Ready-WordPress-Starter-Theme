@@ -17,7 +17,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 tha_sidebars_before();
 
 ?>
-<aside id="secondary" class="col-md-4 widget-area" role="complementary">
+<aside id="secondary" class="col-md-4 widget-area" aria-label="Primary Sidebar" itemscope itemtype="http://schema.org/WPSideBar">
 	<?php
 
     // Theme Hook Alliance
