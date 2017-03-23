@@ -37,8 +37,17 @@ add_action( 'wp_enqueue_scripts', 'load_exopite_styles' );
 if ( ! function_exists( 'load_exopite_scripts' ) ) {
 	function load_exopite_scripts() {
 
-        /* JavaScript Hooks and Filters Object */
-        wp_enqueue_script( 'javascript-hooks', get_template_directory_uri() . '/js/javascript.hooks-filters.js', array(), null, true );
+        /*
+         * JavaScript Hooks and Filters System
+         *
+         * A lightweight JavaScript event/hook manager for WordPress
+         *
+         * @link: https://github.com/carldanley/WP-JS-Hooks
+         */
+        $javascript_hooks_js_uri = TEMPLATEURI . '/js/event-manager.min.js';
+        $javascript_hooks_js_path = join( DIRECTORY_SEPARATOR, array( TEMPLATEPATH, 'js', 'event-manager.min.js' ) );
+        wp_register_script( 'javascript-hooks', $javascript_hooks_js_uri, array(), filemtime( $javascript_hooks_js_path ), true);
+        wp_enqueue_script( 'javascript-hooks' );
 
 		wp_enqueue_script( 'jquery-tether-133', 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.3/js/tether.min.js', array( 'jquery' ), '133', true );
 

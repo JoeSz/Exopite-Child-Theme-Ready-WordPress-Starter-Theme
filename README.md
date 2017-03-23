@@ -56,3 +56,25 @@ Then, update the stylesheet header in `style.css` and the links in `footer.php` 
 Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
 
 Good luck!
+
+CHANGELOG
+---------
+
+= 1.1 - 2017-03-23 =
+* Add: Check ABSPATH for security
+* Add: Basic schema.org itemscope and itemtype for better SEO
+* Add: Header rel="canonical" for better SEO
+* Add: Enqueue scripts and styles with automatic versioning
+* Add: Lightweight JavaScript event/hook manager for WordPress
+https://github.com/carldanley/WP-JS-Hooks
+* Fix: Code refactor and add some comments for better readability
+
+= 1.0.1 =
+* Fix: Fix sidebar position
+* Fix: Remove tha_content_before() and tha_content_top() because it belong to content.php
+* Fix: Add btn Bootstrap class to submit button
+* Fix: Combine post meta to one function
+* Fix: JS: Add try catch for hooks
+
+= 1.0 =
+* Initial release.
