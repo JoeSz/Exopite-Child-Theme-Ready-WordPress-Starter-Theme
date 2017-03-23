@@ -154,3 +154,31 @@ require get_template_directory() . '/inc/jetpack.php';
  * desired consistency.
  */
 require( INC . '/tha-theme-hooks.php' );
+
+/**
+ * Add canonical URL to page
+ *
+ * A canonical URL allows you to tell search engines that certain similar URLs are actually one and the same
+ * At Yoast, we have a strong preference for having a canonical link element on every page and Google has confirmed that’s best.
+ *
+ * @link http://www.thesempost.com/using-rel-canonical-on-all-pages-for-duplicate-content-protection/
+ * @link https://yoast.com/rel-canonical/
+ */
+add_action( 'wp_head', 'exopite_add_canonical' );
+if ( ! function_exists( 'exopite_add_canonical' ) ) {
+    function exopite_add_canonical() {
+
+        $exopite_settings = get_option( 'exopite_options' );
+
+        if ( $exopite_settings['exopite-canonical-enabled'] ) {
+
+            /*
+             * Set get_the_permalink as canonical
+             * https://www.mattcutts.com/blog/seo-advice-url-canonicalization/
+             */
+            echo '<link rel="canonical" href="' . esc_url( get_the_permalink() ) . '">';
+
+        }
+
+    }
+}
