@@ -14,6 +14,8 @@
  *
  * @package Exopite
  */
+// Exit if accessed directly
+defined('ABSPATH') or die( 'You cannot access this page directly.' );
 
 /**
  * Set up the WordPress core custom header feature.

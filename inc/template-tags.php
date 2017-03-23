@@ -6,6 +6,8 @@
  *
  * @package Exopite
  */
+// Exit if accessed directly
+defined('ABSPATH') or die( 'You cannot access this page directly.' );
 
 if ( ! function_exists( 'exopite_blog_meta' ) ) :
 /**

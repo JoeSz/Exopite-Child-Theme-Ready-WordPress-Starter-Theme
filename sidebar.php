@@ -6,15 +6,32 @@
  *
  * @package Exopite
  */
+// Exit if accessed directly
+defined('ABSPATH') or die( 'You cannot access this page directly.' );
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 	return;
 }
+
+// Theme Hook Alliance
+tha_sidebars_before();
+
 ?>
-<?php tha_sidebars_before(); ?>
 <aside id="secondary" class="col-md-4 widget-area" role="complementary">
-	<?php tha_sidebar_top(); ?>
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
-	<?php tha_sidebar_bottom(); ?>
+	<?php
+
+    // Theme Hook Alliance
+    tha_sidebar_top();
+
+    dynamic_sidebar( 'sidebar-1' );
+
+    tha_sidebar_bottom();
+
+    ?>
 </aside><!-- #secondary -->
-<?php tha_sidebars_after(); ?>
+<?php
+
+// Theme Hook Alliance
+tha_sidebars_after();
+
+?>

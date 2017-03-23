@@ -11,15 +11,28 @@
  *
  * @package Exopite
  */
+// Exit if accessed directly
+defined('ABSPATH') or die( 'You cannot access this page directly.' );
 
-get_header(); ?>
-	<?php tha_content_before(); ?>
+get_header();
+
+    // Theme Hook Alliance
+    tha_content_before();
+
+    ?>
 	<div class="container">
 		<div class="row">
 			<div id="primary" class="<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>col-md-8<?php else : ?>col-md-12<?php endif; ?> content-area">
 				<main id="main" class="site-main" role="main">
-				<?php tha_content_top(); ?>
 				<?php
+
+                /*
+                 * Theme Hook Alliance hook
+                 * GitHub: https://github.com/zamoose/themehookalliance
+                 * File:   include/plugins/tha-theme-hooks.php
+                 */
+                tha_content_top();
+
 				if ( have_posts() ) :
 
 					if ( is_home() && ! is_front_page() ) : ?>
@@ -29,7 +42,10 @@ get_header(); ?>
 
 					<?php
 					endif;
+
+                    // Theme Hook Alliance
 					tha_content_while_before();
+
 					/* Start the Loop */
 					while ( have_posts() ) : the_post();
 
@@ -41,20 +57,34 @@ get_header(); ?>
 						get_template_part( 'template-parts/content', get_post_format() );
 
 					endwhile;
+
+                    // Theme Hook Alliance
 					tha_content_while_after();
+
 					the_posts_navigation();
 
 				else :
 
 					get_template_part( 'template-parts/content', 'none' );
 
-				endif; ?>
-				<?php tha_content_bottom(); ?>
+				endif;
+
+                // Theme Hook Alliance
+                tha_content_bottom();
+
+                ?>
 				</main><!-- #main -->
 			</div><!-- #primary -->
-			<?php get_sidebar(); ?>
+			<?php
+
+            get_sidebar();
+
+            ?>
 		</div><!-- .row -->
 	</div><!-- .container -->
-	<?php tha_content_after(); ?>
-<?php
+	<?php
+
+    // Theme Hook Alliance
+    tha_content_after();
+
 get_footer();

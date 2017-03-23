@@ -6,15 +6,29 @@
  *
  * @package Exopite
  */
+// Exit if accessed directly
+defined('ABSPATH') or die( 'You cannot access this page directly.' );
+
+// Theme Hook Alliance
+tha_entry_before();
 
 ?>
-<?php tha_entry_before(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php tha_entry_top(); ?>
+	<?php
+
+    // Theme Hook Alliance
+    tha_entry_top();
+
+    ?>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
-	<?php tha_entry_content_before(); ?>
+	<?php
+
+    // Theme Hook Alliance
+    tha_entry_content_before();
+
+    ?>
 	<div class="entry-content">
 		<?php
 			the_content();
@@ -25,8 +39,13 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-	<?php tha_entry_content_after(); ?>
-	<?php if ( get_edit_post_link() ) : ?>
+	<?php
+
+    // Theme Hook Alliance
+    tha_entry_content_after();
+
+    if ( get_edit_post_link() ) :
+        ?>
 		<footer class="entry-footer">
 			<?php
 				edit_post_link(
@@ -40,7 +59,17 @@
 				);
 			?>
 		</footer><!-- .entry-footer -->
-	<?php endif; ?>
-	<?php tha_entry_bottom(); ?>
+	   <?php
+    endif;
+
+    // Theme Hook Alliance
+    tha_entry_bottom();
+
+    ?>
 </article><!-- #post-## -->
-<?php tha_entry_after(); ?>
+<?php
+
+// Theme Hook Alliance
+tha_entry_after();
+
+?>

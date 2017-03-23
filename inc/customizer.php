@@ -4,6 +4,8 @@
  *
  * @package Exopite
  */
+// Exit if accessed directly
+defined('ABSPATH') or die( 'You cannot access this page directly.' );
 
 /**
  * Add postMessage support for site title and description for the Theme Customizer.

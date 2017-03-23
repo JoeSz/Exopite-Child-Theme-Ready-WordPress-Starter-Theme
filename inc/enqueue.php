@@ -2,6 +2,9 @@
 /**
  * Enqueue styles.
  */
+// Exit if accessed directly
+defined('ABSPATH') or die( 'You cannot access this page directly.' );
+
 if ( ! function_exists( 'load_exopite_styles' ) ) {
 	function load_exopite_styles() {
 

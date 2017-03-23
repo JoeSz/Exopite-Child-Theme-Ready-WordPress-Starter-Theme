@@ -13,13 +13,20 @@
  *
  * @package Exopite
  */
-get_header(); ?>
+// Exit if accessed directly
+defined('ABSPATH') or die( 'You cannot access this page directly.' );
+
+get_header();
+
+?>
 	<div class="container without-sidebar">
 		<div class="row">
 			<div id="primary" class="col-md-12 content-area">
 				<main id="main" class="site-main" role="main">
-					<?php tha_content_top(); ?>
 					<?php
+
+                    // Theme Hook Alliance
+                    tha_content_top();
 					tha_content_while_before();
 
 					while ( have_posts() ) : the_post();
@@ -34,12 +41,16 @@ get_header(); ?>
 						endif;
 
 					endwhile; // End of the loop.
-					tha_content_while_after();
-					?>
-					<?php tha_content_bottom(); ?>
+
+                    // Theme Hook Alliance
+                    tha_content_while_after();
+					tha_content_bottom();
+
+                    ?>
 				</main><!-- #main -->
 			</div><!-- #primary -->
 		</div><!-- .row -->
 	</div><!-- .container -->
 <?php
+
 get_footer();

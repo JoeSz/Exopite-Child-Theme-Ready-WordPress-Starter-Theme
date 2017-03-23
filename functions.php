@@ -6,14 +6,14 @@
  *
  * @package Exopite
  */
+// Exit if accessed directly
+defined('ABSPATH') or die( 'You cannot access this page directly.' );
 
 /**
  * ----------------------------------------------------------------------------------------
  * 1.0 - Define constants.
  * ----------------------------------------------------------------------------------------
  */
-//define( 'THEMEROOT', get_stylesheet_directory_uri() );
-// Activate gzip Compression
 define( 'THEMEROOT', get_template_directory() );
 define( 'SCRIPTS', THEMEROOT . '/js' );
 define( 'INC', THEMEROOT . '/inc' );

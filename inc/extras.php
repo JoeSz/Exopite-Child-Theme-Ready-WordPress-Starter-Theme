@@ -6,6 +6,8 @@
  *
  * @package Exopite
  */
+// Exit if accessed directly
+defined('ABSPATH') or die( 'You cannot access this page directly.' );
 
 /**
  * Adds custom classes to the array of body classes.

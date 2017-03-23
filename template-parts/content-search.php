@@ -6,27 +6,66 @@
  *
  * @package Exopite
  */
+// Exit if accessed directly
+defined('ABSPATH') or die( 'You cannot access this page directly.' );
+
+// Theme Hook Alliance
+tha_entry_before();
 
 ?>
-<?php tha_entry_before(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php tha_entry_top(); ?>
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+	<?php
 
-		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
+    // Theme Hook Alliance
+    tha_entry_top();
+
+    ?>
+	<header class="entry-header">
+		<?php
+
+        the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
+
+        if ( 'post' === get_post_type() ) :
+            ?>
+		    <div class="entry-meta">
             <?php exopite_blog_meta(); ?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
+		    </div><!-- .entry-meta -->
+		    <?php
+        endif;
+
+        ?>
 	</header><!-- .entry-header -->
-	<?php tha_entry_content_before(); ?>
+	<?php
+
+    // Theme Hook Alliance
+    tha_entry_content_before();
+
+    ?>
 	<div class="entry-summary">
-		<?php the_excerpt(); ?>
+		<?php
+
+        the_excerpt();
+
+        ?>
 	</div><!-- .entry-summary -->
-	<?php tha_entry_content_after(); ?>
+	<?php
+
+    // Theme Hook Alliance
+    tha_entry_content_after();
+
+    ?>
 	<footer class="entry-footer">
 	</footer><!-- .entry-footer -->
-	<?php tha_entry_bottom(); ?>
+	<?php
+
+    // Theme Hook Alliance
+    tha_entry_bottom();
+
+    ?>
 </article><!-- #post-## -->
-<?php tha_entry_after(); ?>
+<?php
+
+// Theme Hook Alliance
+tha_entry_after();
+
+?>

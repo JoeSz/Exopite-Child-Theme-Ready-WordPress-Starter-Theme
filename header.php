@@ -8,42 +8,83 @@
  *
  * @package Exopite
  */
+// Exit if accessed directly
+defined('ABSPATH') or die( 'You cannot access this page directly.' );
+
+// Theme Hook Alliance
 tha_html_before();
+
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-<?php tha_head_top(); ?>
+<?php
+
+// Theme Hook Alliance
+tha_head_top();
+
+?>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<?php tha_head_bottom(); ?>
-<?php wp_head(); ?>
-</head>
+<?php
 
+// Theme Hook Alliance
+tha_head_bottom();
+
+wp_head();
+
+?>
+</head>
 <body <?php body_class(); ?>>
-<?php tha_body_top(); ?>
+<?php
+
+// Theme Hook Alliance
+tha_body_top();
+
+?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'exopite' ); ?></a>
-	<?php tha_header_before(); ?>
+	<?php
+
+    // Theme Hook Alliance
+    tha_header_before();
+
+    ?>
 	<header id="masthead" class="site-header" role="banner">
         <div class="container">
-    		<?php tha_header_top(); ?>
+    		<?php
+
+            // Theme Hook Alliance
+            tha_header_top();
+
+            ?>
     		<div class="site-branding">
                 <div class="row">
                     <div class="col-md-12">
             			<?php
-            			if ( is_front_page() && is_home() ) : ?>
+
+            			if ( is_front_page() && is_home() ) :
+
+                            ?>
             				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-            			<?php else : ?>
+            			    <?php
+
+                        else :
+
+                            ?>
             				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-            			<?php
+            			    <?php
+
             			endif;
 
             			$description = get_bloginfo( 'description', 'display' );
-            			if ( $description || is_customize_preview() ) : ?>
+            			if ( $description || is_customize_preview() ) :
+
+                            ?>
             				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-            			<?php
+            			    <?php
+
             			endif; ?>
                     </div>
                 </div>
@@ -53,13 +94,27 @@ tha_html_before();
 				<div class="row">
 					<div class="col-md-12">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'exopite' ); ?></button>
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+						<?php
+
+                        wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) );
+
+                        ?>
 					</div>
 				</div>
     		</nav><!-- #site-navigation -->
-    		<?php tha_header_bottom(); ?>
+    		<?php
+
+            // Theme Hook Alliance
+            tha_header_bottom();
+
+            ?>
         </div><!-- .container -->
 	</header><!-- #masthead -->
-	<?php tha_header_after(); ?>
+	<?php
+
+    // Theme Hook Alliance
+    tha_header_after();
+
+    ?>
 	<div id="content" class="site-content">
 

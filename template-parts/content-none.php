@@ -6,15 +6,29 @@
  *
  * @package Exopite
  */
+// Exit if accessed directly
+defined('ABSPATH') or die( 'You cannot access this page directly.' );
+
+// Theme Hook Alliance
+tha_entry_before();
 
 ?>
-<?php tha_entry_before(); ?>
 <section class="no-results not-found">
-	<?php tha_entry_top(); ?>
+	<?php
+
+    // Theme Hook Alliance
+    tha_entry_top();
+
+    ?>
 	<header class="page-header">
 		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'exopite' ); ?></h1>
 	</header><!-- .page-header -->
-	<?php tha_entry_content_before(); ?>
+	<?php
+
+    // Theme Hook Alliance
+    tha_entry_content_before();
+
+    ?>
 	<div class="page-content">
 		<?php
 		if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
@@ -35,7 +49,17 @@
 
 		endif; ?>
 	</div><!-- .page-content -->
-	<?php tha_entry_content_after(); ?>
-	<?php tha_entry_bottom(); ?>
+	<?php
+
+    // Theme Hook Alliance
+    tha_entry_content_after();
+    tha_entry_bottom();
+
+    ?>
 </section><!-- .no-results -->
-<?php tha_entry_after(); ?>
+<?php
+
+// Theme Hook Alliance
+tha_entry_after();
+
+?>

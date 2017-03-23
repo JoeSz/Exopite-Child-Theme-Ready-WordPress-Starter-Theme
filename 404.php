@@ -6,6 +6,8 @@
  *
  * @package Exopite
  */
+// Exit if accessed directly
+defined('ABSPATH') or die( 'You cannot access this page directly.' );
 
 get_header(); ?>
 
@@ -14,19 +16,35 @@ get_header(); ?>
 		<div class="row">
 			<div id="primary" class="<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>col-md-8<?php else : ?>col-md-12<?php endif; ?> content-area">
 				<main id="main" class="site-main" role="main">
-					<?php tha_content_top(); ?>
+					<?php
+
+                    // Theme Hook Alliance
+                    tha_content_top();
+
+                    ?>
 					<section class="error-404 not-found">
-						<?php tha_entry_before(); ?>
-						<?php tha_entry_top(); ?>
+						<?php
+
+                        // Theme Hook Alliance
+                        tha_entry_before();
+                        tha_entry_top();
+
+                        ?>
 						<header class="page-header">
 							<h1 class="page-title"><?php esc_html_e( "We're sorry, but we couldn't find the page you were looking for.", 'exopite' ); ?></h1>
 							<h2 class="page-subtitle"><?php esc_html_e( 'Maybe you followed a bad link or typed a wrong URL?', 'exopite' ); ?></h2>
 						</header><!-- .page-header -->
-						<?php tha_entry_content_before(); ?>
+						<?php
+
+                        // Theme Hook Alliance
+                        tha_entry_content_before();
+
+                        ?>
 						<div class="page-content">
 							<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'exopite' ); ?></p>
 
 							<?php
+
 								get_search_form();
 
 								the_widget( 'WP_Widget_Recent_Posts' );
@@ -55,21 +73,38 @@ get_header(); ?>
 
 								/* translators: %1$s: smiley */
 								$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'exopite' ), convert_smilies( ':)' ) ) . '</p>';
-								the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
 
+								the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
 								the_widget( 'WP_Widget_Tag_Cloud' );
 							?>
 						</div><!-- .page-content -->
-						<?php tha_entry_content_after(); ?>
-						<?php tha_entry_bottom(); ?>
+						<?php
+
+                        // Theme Hook Alliance
+                        tha_entry_content_after();
+                        tha_entry_bottom();
+
+                        ?>
 					</section><!-- .error-404 -->
-					<?php tha_content_bottom(); ?>
-					<?php tha_entry_after(); ?>
+					<?php
+
+                    // Theme Hook Alliance
+                    tha_content_bottom();
+                    tha_entry_after();
+
+                    ?>
 				</main><!-- #main -->
 			</div><!-- #primary -->
-			<?php get_sidebar(); ?>
+			<?php
+
+            get_sidebar();
+
+            ?>
 		</div><!-- .row -->
 	</div><!-- .container -->
-	<?php tha_content_after(); ?>
-<?php
+	<?php
+
+    // Theme Hook Alliance
+    tha_content_after();
+
 get_footer();

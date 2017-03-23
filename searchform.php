@@ -3,6 +3,9 @@
  * Erliama search form
  * Source: http://buildwpyourself.com/wordpress-search-form-template/
  */
+// Exit if accessed directly
+defined('ABSPATH') or die( 'You cannot access this page directly.' );
+
 ?>
 <form role="search" method="get" id="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
     <div class="input-group search-widget">

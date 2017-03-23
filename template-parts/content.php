@@ -6,11 +6,20 @@
  *
  * @package Exopite
  */
+// Exit if accessed directly
+defined('ABSPATH') or die( 'You cannot access this page directly.' );
+
+// Theme Hook Alliance
+tha_entry_before();
 
 ?>
-<?php tha_entry_before(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php tha_entry_top(); ?>
+	<?php
+
+    // Theme Hook Alliance
+    tha_entry_top();
+
+    ?>
 	<header class="entry-header">
 		<?php
 		if ( is_single() ) :
@@ -27,7 +36,12 @@
 		endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php tha_entry_content_before(); ?>
+	<?php
+
+    // Theme Hook Alliance
+    tha_entry_content_before();
+
+    ?>
 	<div class="entry-content">
 		<?php
 			the_content( sprintf(
@@ -42,10 +56,24 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-	<?php tha_entry_content_after(); ?>
+	<?php
 
+    // Theme Hook Alliance
+    tha_entry_content_after();
+
+    ?>
 	<footer class="entry-footer">
     </footer><!-- .entry-footer -->
-	<?php tha_entry_bottom(); ?>
+	<?php
+
+    // Theme Hook Alliance
+    tha_entry_bottom();
+
+    ?>
 </article><!-- #post-## -->
-<?php tha_entry_after(); ?>
+<?php
+
+// Theme Hook Alliance
+tha_entry_after();
+
+?>
