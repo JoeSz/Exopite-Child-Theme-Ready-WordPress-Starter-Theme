@@ -15,6 +15,7 @@ defined('ABSPATH') or die( 'You cannot access this page directly.' );
  * ----------------------------------------------------------------------------------------
  */
 define( 'THEMEROOT', get_template_directory() );
+define( 'TEMPLATEURI', get_template_directory_uri() );
 define( 'SCRIPTS', THEMEROOT . '/js' );
 define( 'INC', THEMEROOT . '/inc' );
 
