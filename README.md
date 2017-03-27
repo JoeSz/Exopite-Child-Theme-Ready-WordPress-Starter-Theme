@@ -59,6 +59,10 @@ Good luck!
 CHANGELOG
 ---------
 
+= 1.2 - 2017-03-27 =
+* Update to newest _s
+* Fix: some minor code refactroing
+
 = 1.1 - 2017-03-23 =
 * Add: Check ABSPATH for security
 * Add: Basic schema.org itemscope and itemtype for better SEO

@@ -51,24 +51,26 @@ get_header(); ?>
 
 								// Only show the widget if site has multiple categories.
 								if ( exopite_categorized_blog() ) :
-							?>
 
-							<div class="widget widget_categories">
-								<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'exopite' ); ?></h2>
-								<ul>
-								<?php
-									wp_list_categories( array(
-										'orderby'    => 'count',
-										'order'      => 'DESC',
-										'show_count' => 1,
-										'title_li'   => '',
-										'number'     => 10,
-									) );
-								?>
-								</ul>
-							</div><!-- .widget -->
+    							?>
+    							<div class="widget widget_categories">
+    								<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'exopite' ); ?></h2>
+    								<ul>
+    								<?php
 
-							<?php
+    									wp_list_categories( array(
+    										'orderby'    => 'count',
+    										'order'      => 'DESC',
+    										'show_count' => 1,
+    										'title_li'   => '',
+    										'number'     => 10,
+    									) );
+
+    								?>
+    								</ul>
+    							</div><!-- .widget -->
+    							<?php
+
 								endif;
 
 								/* translators: %1$s: smiley */
@@ -76,6 +78,7 @@ get_header(); ?>
 
 								the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
 								the_widget( 'WP_Widget_Tag_Cloud' );
+
 							?>
 						</div><!-- .page-content -->
 						<?php
