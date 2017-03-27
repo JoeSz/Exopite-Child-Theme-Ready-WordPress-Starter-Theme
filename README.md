@@ -19,12 +19,11 @@ My ultra-minimal CSS might make me look like theme tartare but that means less s
 * 2 sample CSS layouts in `layouts/` for a sidebar on either side of your content.
 * Smartly organized starter CSS in `style.css` that will help you to quickly get your design off the ground.
 * Licensed under GPLv2 or later. :) Use it to make something cool.
-* [Bootstrap 4 beta 5](https://github.com/twbs/bootstrap/tree/v4-dev) from CDN
-* [Font Awesome 4.6.3](https://github.com/FortAwesome/Font-Awesome) from CDN
-* [jQuery 2.2.4](https://github.com/jquery/jquery/tree/2.2-stable) from CDN
+* [Bootstrap 4 alpha 6](https://github.com/twbs/bootstrap/tree/v4-dev) from CDN
+* [Font Awesome 4.7](https://github.com/FortAwesome/Font-Awesome) from CDN
 * [Theme Hook Alliance](https://github.com/zamoose/themehookalliance)
 * [_s](https://github.com/Automattic/_s)
-* [JavaScript Hook and Filter system](http://stackoverflow.com/questions/20131168/jquery-javascript-hooks/20132960#20132960)
+* [JavaScript Hook and Filter system](https://github.com/carldanley/WP-JS-Hooks)
 
 Getting Started (form original underscores/_s)
 ---------------

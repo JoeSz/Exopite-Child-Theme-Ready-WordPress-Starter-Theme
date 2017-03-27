@@ -13,7 +13,9 @@ A starter theme called Exopite, or underscores.
 
 == Description ==
 
-Hi. I'm a starter theme called Exopite, or underscores, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+This is a starter theme, based on _s, with some extra features like Bootstrap 4 alfa 3, jQuery 2.2.4, Theme Hook Alliance, Font Awesome 4.6.3.
+
+I like underscores, Bootstrap and Theme Hook Alliance. it is existing underscores and Bootstrap [UnderStrap](https://github.com/holger1411/understrap) or underscores and Theme Hook Alliance [hook_s](https://github.com/bradp/hook_s) but not together, and because I do not want to start always from scratch, I build it for myself and for anybody who want it.
 
 == Installation ==
 
@@ -21,18 +23,54 @@ Hi. I'm a starter theme called Exopite, or underscores, if you like. I'm a theme
 2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.
 
-== Frequently Asked Questions ==
+underscores/_s only
 
-= Does this theme support any plugins? =
+If you want to keep it simple, head over to http://underscores.me and generate your `_s` based theme from there. You just input the name of the theme you want to create, click the "Generate" button, and you get your ready-to-awesomize starter theme.
 
-Exopite includes support for Infinite Scroll in Jetpack.
+underscores/_s and Exopite
+
+If you want to set things up manually, download `exopite` from GitHub. The first thing you want to do is copy the `exopite` directory and change the name to something else (like, say, `megatherium`), and then you'll need to do a five-step find and replace on the name in all the templates.
+
+1. Search for `'exopite'` (inside single quotations) to capture the text domain.
+2. Search for `exopite_` to capture all the function names.
+3. Search for `Text Domain: exopite` in style.css.
+4. Search for <code>&nbsp;exopite</code> (with a space before it) to capture DocBlocks.
+5. Search for `exopite-` to capture prefixed handles.
+
+OR
+
+* Search for: `'exopite'` and replace with: `'megatherium'`
+* Search for: `exopite_` and replace with: `megatherium_`
+* Search for: `Text Domain: exopite` and replace with: `Text Domain: megatherium` in style.css.
+* Search for: <code>&nbsp;exopite</code> and replace with: <code>&nbsp;Megatherium</code>
+* Search for: `exopite-` and replace with: `megatherium-`
+
+Then, update the stylesheet header in `style.css` and the links in `footer.php` with your own information. Next, update or delete this readme.
+
+Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
 
 == Changelog ==
 
-= 1.0 - May 12 2015 =
-* Initial release
+= 1.1 - 2017-03-23 =
+* Add: Check ABSPATH for security
+* Add: Basic schema.org itemscope and itemtype for better SEO
+* Add: Header rel="canonical" for better SEO
+* Add: Enqueue scripts and styles with automatic versioning
+* Add: Lightweight JavaScript event/hook manager for WordPress
+https://github.com/carldanley/WP-JS-Hooks
+* Fix: Code refactor and add some comments for better readability
+
+= 1.0.1 =
+* Fix: Fix sidebar position
+* Fix: Remove tha_content_before() and tha_content_top() because it belong to content.php
+* Fix: Add btn Bootstrap class to submit button
+* Fix: Combine post meta to one function
+* Fix: JS: Add try catch for hooks
+
+= 1.0 =
+* Initial release.
 
 == Credits ==
 
 * Based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
-* normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
+
