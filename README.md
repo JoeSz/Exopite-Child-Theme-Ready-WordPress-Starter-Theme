@@ -1,8 +1,6 @@
 # Exopite _s
-===
-
-## This is a starter theme, based on _s
-### with some extra features like Bootstrap 4 alfa 6, Theme Hook Alliance, Font Awesome 4.7
+## This is a WordPress starter theme, based on _s with some extra features
+### Using _s (Underscores), Bootstrap 4, Theme Hook Alliance, JavaScript Hook, Font Awesome 4.7
 
 I like underscores, Bootstrap and Theme Hook Alliance. it is existing underscores and Bootstrap [UnderStrap](https://github.com/holger1411/understrap) or underscores and Theme Hook Alliance [hook_s](https://github.com/bradp/hook_s) but not together, and because I do not want to start always from scratch, I build it for myself and for anybody who want it.
 
