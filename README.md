@@ -53,7 +53,7 @@ Then, update the stylesheet header in `style.css` and the links in `footer.php` 
 
 Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
 
-Good luck!
+Good luck and happy coding!
 
 CHANGELOG
 ---------
@@ -80,3 +80,9 @@ https://github.com/carldanley/WP-JS-Hooks
 
 = 1.0 =
 * Initial release.
+
+DISCLAMER
+---------
+
+NO WARRANTY OF ANY KIND! USE THIS SOFTWARES AND INFORMATIONS AT YOUR OWN RISK! READ DISCLAMER.TXT!
+License: GNU General Public License v3
