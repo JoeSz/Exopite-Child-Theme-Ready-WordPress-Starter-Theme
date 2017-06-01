@@ -19,7 +19,7 @@ function exopite_blog_meta() {
 
         /* translators: used between list items, there is a space after the comma */
         $categories_list = get_the_category_list( esc_html__( '/', 'exopite' ) );
-        if ( $categories_list && markatustools_categorized_blog() ) {
+        if ( $categories_list ) {
             printf( '<span class="cat-links">' . esc_html( '%1$s' ) . '</span>', $categories_list ); // WPCS: XSS OK.
         }
 
