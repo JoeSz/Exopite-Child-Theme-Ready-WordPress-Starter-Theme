@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Exopite
+ * @package exopite-starter
  */
 // Exit if accessed directly
 defined('ABSPATH') or die( 'You cannot access this page directly.' );
@@ -44,7 +44,7 @@ tha_body_top();
 
 ?>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'exopite' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'exopite-starter' ); ?></a>
 	<?php
 
     // Theme Hook Alliance
@@ -93,7 +93,7 @@ tha_body_top();
     		<nav id="site-navigation" class="main-navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
 				<div class="row">
 					<div class="col-md-12">
-						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'exopite' ); ?></button>
+						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'exopite-starter' ); ?></button>
 						<?php
 
                         wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) );

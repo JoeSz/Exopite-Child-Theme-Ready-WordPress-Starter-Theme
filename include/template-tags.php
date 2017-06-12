@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package Exopite
+ * @package exopite-starter
  */
 // Exit if accessed directly
 defined('ABSPATH') or die( 'You cannot access this page directly.' );
@@ -18,7 +18,7 @@ function exopite_blog_meta() {
     if ( 'post' === get_post_type() ) {
 
         /* translators: used between list items, there is a space after the comma */
-        $categories_list = get_the_category_list( esc_html__( '/', 'exopite' ) );
+        $categories_list = get_the_category_list( esc_html__( '/', 'exopite-starter' ) );
         if ( $categories_list ) {
             printf( '<span class="cat-links">' . esc_html( '%1$s' ) . '</span>', $categories_list ); // WPCS: XSS OK.
         }
@@ -26,7 +26,7 @@ function exopite_blog_meta() {
         echo '<span class="meta-separator"></span>';
 
         printf(
-            esc_html( '%s', 'exopite' ),
+            esc_html( '%s', 'exopite-starter' ),
             '<span class="author vcard"><i class="fa fa-pencil" aria-hidden="true"></i> <a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
         );
 
@@ -40,7 +40,7 @@ function exopite_blog_meta() {
         );
 
         printf(
-            esc_html( '%s', 'exopite' ),
+            esc_html( '%s', 'exopite-starter' ),
             '<span class="posted-on"><i class="fa fa-clock-o" aria-hidden="true"></i><a href="' . esc_url( get_site_url() ) . '/' . esc_html( get_the_date( 'Y' ) ) . '/' . esc_html( get_the_date( 'm' ) ) . '/' . esc_html( get_the_date( 'd' ) ) . '" rel="date">' . get_the_date() . '</a></span>'
         );
 
@@ -56,7 +56,7 @@ function exopite_blog_meta() {
         echo '<span class="meta-separator"></span>';
 
         edit_post_link(
-            __( 'Edit', 'exopite' ),
+            __( 'Edit', 'exopite-starter' ),
             '<span class="edit-link">',
             '</span>'
         );

@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Exopite
+ * @package exopite-starter
  */
 // Exit if accessed directly
 defined('ABSPATH') or die( 'You cannot access this page directly.' );
@@ -34,11 +34,11 @@ defined('ABSPATH') or die( 'You cannot access this page directly.' );
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'exopite' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'exopite' ), 'WordPress' ); ?></a>
+						<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'exopite-starter' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'exopite-starter' ), 'WordPress' ); ?></a>
 						<span class="sep"> | </span>
 						<?php
 
-                        printf( esc_html__( 'Theme: %1$s by %2$s.', 'exopite' ), 'exopite', '<a href="http://joe.szalai.org" rel="designer">Joe Szalai</a>' );
+                        printf( esc_html__( 'Theme: %1$s by %2$s.', 'exopite-starter' ), 'exopite-starter', '<a href="http://joe.szalai.org" rel="designer">Joe Szalai</a>' );
 
                         ?>
 					</div>

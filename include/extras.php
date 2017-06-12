@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package Exopite
+ * @package exopite-starter
  */
 // Exit if accessed directly
 defined('ABSPATH') or die( 'You cannot access this page directly.' );

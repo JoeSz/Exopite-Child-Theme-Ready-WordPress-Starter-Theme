@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Exopite
+ * @package exopite-starter
  */
 // Exit if accessed directly
 defined('ABSPATH') or die( 'You cannot access this page directly.' );
@@ -34,7 +34,7 @@ tha_entry_before();
 			the_content();
 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'exopite' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'exopite-starter' ),
 				'after'  => '</div>',
 			) );
 		?>
@@ -51,7 +51,7 @@ tha_entry_before();
 				edit_post_link(
 					sprintf(
 						/* translators: %s: Name of current post */
-						esc_html__( 'Edit %s', 'exopite' ),
+						esc_html__( 'Edit %s', 'exopite-starter' ),
 						the_title( '<span class="screen-reader-text">"', '"</span>', false )
 					),
 					'<span class="edit-link">',

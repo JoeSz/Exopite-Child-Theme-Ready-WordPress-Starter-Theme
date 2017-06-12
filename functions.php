@@ -1,10 +1,10 @@
 <?php
 /**
- * Exopite functions and definitions.
+ * exopite-starter functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Exopite
+ * @package exopite-starter
  */
 // Exit if accessed directly
 defined('ABSPATH') or die( 'You cannot access this page directly.' );
@@ -17,7 +17,7 @@ defined('ABSPATH') or die( 'You cannot access this page directly.' );
 define( 'THEMEROOT', get_template_directory() );
 define( 'TEMPLATEURI', get_template_directory_uri() );
 define( 'SCRIPTS', THEMEROOT . '/js' );
-define( 'INC', THEMEROOT . '/inc' );
+define( 'INC', THEMEROOT . '/include' );
 
 if ( ! function_exists( 'exopite_setup' ) ) :
 /**
@@ -31,10 +31,10 @@ function exopite_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on Exopite, use a find and replace
-	 * to change 'exopite' to the name of your theme in all the template files.
+	 * If you're building a theme based on exopite-starter, use a find and replace
+	 * to change 'exopite-starter' to the name of your theme in all the template files.
 	 */
-	load_theme_textdomain( 'exopite', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'exopite-starter', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -56,7 +56,7 @@ function exopite_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary', 'exopite' ),
+		'primary' => esc_html__( 'Primary', 'exopite-starter' ),
 	) );
 
 	/*
@@ -99,9 +99,9 @@ add_action( 'after_setup_theme', 'exopite_content_width', 0 );
  */
 function exopite_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'exopite' ),
+		'name'          => esc_html__( 'Sidebar', 'exopite-starter' ),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'exopite' ),
+		'description'   => esc_html__( 'Add widgets here.', 'exopite-starter' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
@@ -118,27 +118,27 @@ require( INC . '/enqueue.php' );
 /**
  * Implement the Custom Header feature.
  */
-require get_template_directory() . '/inc/custom-header.php';
+require get_template_directory() . '/include/custom-header.php';
 
 /**
  * Custom template tags for this theme.
  */
-require get_template_directory() . '/inc/template-tags.php';
+require get_template_directory() . '/include/template-tags.php';
 
 /**
  * Custom functions that act independently of the theme templates.
  */
-require get_template_directory() . '/inc/extras.php';
+require get_template_directory() . '/include/extras.php';
 
 /**
  * Customizer additions.
  */
-require get_template_directory() . '/inc/customizer.php';
+require get_template_directory() . '/include/customizer.php';
 
 /**
  * Load Jetpack compatibility file.
  */
-require get_template_directory() . '/inc/jetpack.php';
+require get_template_directory() . '/include/jetpack.php';
 
 /*
  * Include Theme Hook Alliance hooks.

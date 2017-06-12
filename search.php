@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package Exopite
+ * @package exopite-starter
  */
 // Exit if accessed directly
 defined('ABSPATH') or die( 'You cannot access this page directly.' );
@@ -27,8 +27,8 @@ get_header();
 				if ( have_posts() ) :
                     ?>
 					<header class="page-header">
-						<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'exopite' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-						<h2 class="page-subtitle"><?php echo $wp_query->found_posts . ' ' . esc_html__( 'results found.', 'exopite' ); ?></h2>
+						<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'exopite-starter' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+						<h2 class="page-subtitle"><?php echo $wp_query->found_posts . ' ' . esc_html__( 'results found.', 'exopite-starter' ); ?></h2>
 					</header><!-- .page-header -->
 					<?php
 

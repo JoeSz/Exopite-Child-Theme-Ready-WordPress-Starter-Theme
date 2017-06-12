@@ -7,7 +7,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Exopite
+ * @package exopite-starter
  */
 // Exit if accessed directly
 defined('ABSPATH') or die( 'You cannot access this page directly.' );
@@ -20,7 +20,7 @@ defined('ABSPATH') or die( 'You cannot access this page directly.' );
 if ( post_password_required() ) : ?>
 	<p>
 		<?php
-			_e( 'This post is password protected. Enter the password to view the comments.', 'exopite' );
+			_e( 'This post is password protected. Enter the password to view the comments.', 'exopite-starter' );
 			return;
 		?>
 	</p>
@@ -41,7 +41,7 @@ tha_comments_before();
 		<h2 class="comments-title">
 			<?php
 				printf( // WPCS: XSS OK.
-					esc_html( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'exopite' ) ),
+					esc_html( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'exopite-starter' ) ),
 					number_format_i18n( get_comments_number() ),
 					'<span>' . get_the_title() . '</span>'
 				);
@@ -53,11 +53,11 @@ tha_comments_before();
 
             ?>
     		<nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">
-    			<h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'exopite' ); ?></h2>
+    			<h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'exopite-starter' ); ?></h2>
     			<div class="nav-links">
 
-    				<div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'exopite' ) ); ?></div>
-    				<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'exopite' ) ); ?></div>
+    				<div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'exopite-starter' ) ); ?></div>
+    				<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'exopite-starter' ) ); ?></div>
 
     			</div><!-- .nav-links -->
     		</nav><!-- #comment-nav-above -->
@@ -82,10 +82,10 @@ tha_comments_before();
 
             ?>
     		<nav id="comment-nav-below" class="navigation comment-navigation" role="navigation">
-    			<h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'exopite' ); ?></h2>
+    			<h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'exopite-starter' ); ?></h2>
     			<div class="nav-links">
-    				<div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'exopite' ) ); ?></div>
-    				<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'exopite' ) ); ?></div>
+    				<div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'exopite-starter' ) ); ?></div>
+    				<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'exopite-starter' ) ); ?></div>
     			</div><!-- .nav-links -->
     		</nav><!-- #comment-nav-below -->
     		<?php
@@ -99,15 +99,15 @@ tha_comments_before();
 	if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 
         ?>
-		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'exopite' ); ?></p>
+		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'exopite-starter' ); ?></p>
   	    <?php
 
 	endif;
 
 	$aria_req = ' aria-required="true"';
-	$author = '<div class="row input-group"><div class="col-xs-12 col-sm-4"><input class="form-control" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" placeholder="' . esc_html__( 'Your Name', 'exopite' ) . '"' . $aria_req . ' /><!-- #form-section-author .form-section --></div>';
-	$email = '<div class="col-xs-12 col-sm-4"><input class="form-control" id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30" placeholder="' . esc_html__( 'Your Email', 'exopite' ) . '"' . $aria_req . ' /><!-- #form-section-email .form-section --></div>';
-	$url =  '<div class="col-xs-12 col-sm-4"><input class="form-control" id="url" name="url" type="text" value="' . esc_attr(  $commenter['comment_author_url'] ) . '" size="30" placeholder="' . esc_html__( 'Your Website', 'exopite' ) . '" /><!-- #form-section-url .form-section --></div></div>';
+	$author = '<div class="row input-group"><div class="col-xs-12 col-sm-4"><input class="form-control" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" placeholder="' . esc_html__( 'Your Name', 'exopite-starter' ) . '"' . $aria_req . ' /><!-- #form-section-author .form-section --></div>';
+	$email = '<div class="col-xs-12 col-sm-4"><input class="form-control" id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30" placeholder="' . esc_html__( 'Your Email', 'exopite-starter' ) . '"' . $aria_req . ' /><!-- #form-section-email .form-section --></div>';
+	$url =  '<div class="col-xs-12 col-sm-4"><input class="form-control" id="url" name="url" type="text" value="' . esc_attr(  $commenter['comment_author_url'] ) . '" size="30" placeholder="' . esc_html__( 'Your Website', 'exopite-starter' ) . '" /><!-- #form-section-url .form-section --></div></div>';
 	$comment_field = '<div id="error"></div><div class="row input-group"><div class="col-xs-12 col-sm-12"><textarea class="form-control" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></div></div>';
 	$comment_notes_after = '';
 	$comment_args = array( 'fields' => apply_filters( 'comment_form_default_fields', array(

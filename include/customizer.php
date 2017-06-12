@@ -1,8 +1,8 @@
 <?php
 /**
- * Exopite Theme Customizer.
+ * exopite-starter Theme Customizer.
  *
- * @package Exopite
+ * @package exopite-starter
  */
 // Exit if accessed directly
 defined('ABSPATH') or die( 'You cannot access this page directly.' );
