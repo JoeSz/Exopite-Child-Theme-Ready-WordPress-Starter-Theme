@@ -52,6 +52,11 @@ Now you're ready to go! The next step is easy to say, but harder to do: make an 
 
 == Changelog ==
 
+= 1.3 - 2017-06-12 =
+* Rename exopite to exopite-starter to avoid conflict with Exopite theme
+* Add child theme
+* Some refacator: move to exopite-starter folder, rename inc folder to include
+
 = 1.2 - 2017-03-27 =
 * Update to newest _s
 * Fix: some minor code refactroing
