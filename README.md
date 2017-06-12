@@ -1,4 +1,4 @@
-# exopite-starter _s
+# Exopite-starter child ready WordPress Theme based on _s
 ## This is a WordPress starter theme, based on _s with some extra features and child theme
 ### Using _s (Underscores), Bootstrap 4, Theme Hook Alliance, JavaScript Hooks, Font Awesome 4.7
 
