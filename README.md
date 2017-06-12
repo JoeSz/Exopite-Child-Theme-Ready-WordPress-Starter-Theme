@@ -1,10 +1,10 @@
 # exopite-starter _s
-## This is a WordPress starter theme, based on _s with some extra features
+## This is a WordPress starter theme, based on _s with some extra features and child theme
 ### Using _s (Underscores), Bootstrap 4, Theme Hook Alliance, JavaScript Hooks, Font Awesome 4.7
 
 I like underscores, Bootstrap and Theme Hook Alliance. it is existing underscores and Bootstrap [UnderStrap](https://github.com/holger1411/understrap) or underscores and Theme Hook Alliance [hook_s](https://github.com/bradp/hook_s) but not together, and because I do not want to start always from scratch, I build it for myself and for anybody who want it.
 
-Hi. I'm a starter theme called `_s`, or `underscores`, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+This theme is not only child theme ready, child theme already included.
 
 My ultra-minimal CSS might make me look like theme tartare but that means less stuff to get in your way when you're designing your awesome theme. Here are some of the other more interesting things you'll find here:
 
@@ -23,6 +23,7 @@ My ultra-minimal CSS might make me look like theme tartare but that means less s
 * [Theme Hook Alliance](https://github.com/zamoose/themehookalliance)
 * [_s](https://github.com/Automattic/_s)
 * [JavaScript Hook and Filter system](https://github.com/carldanley/WP-JS-Hooks)
+* Child theme ready, child theme included.
 
 Getting Started (form original underscores/_s)
 ---------------
