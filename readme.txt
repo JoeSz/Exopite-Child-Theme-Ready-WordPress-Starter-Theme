@@ -52,6 +52,9 @@ Now you're ready to go! The next step is easy to say, but harder to do: make an 
 
 == Changelog ==
 
+= 20170921 - Sep 21 2017 =
+* **UPDATE**: Update to Bootstrap 4.0.0 beta
+
 = 1.3 - 2017-06-12 =
 * Rename exopite to exopite-starter to avoid conflict with Exopite theme
 * Add child theme
