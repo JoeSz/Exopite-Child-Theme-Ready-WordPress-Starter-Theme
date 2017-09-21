@@ -18,7 +18,7 @@ My ultra-minimal CSS might make me look like theme tartare but that means less s
 * 2 sample CSS layouts in `layouts/` for a sidebar on either side of your content.
 * Smartly organized starter CSS in `style.css` that will help you to quickly get your design off the ground.
 * Licensed under GPLv2 or later. :) Use it to make something cool.
-* [Bootstrap 4 alpha 6](https://github.com/twbs/bootstrap/tree/v4-dev) from CDN
+* [Bootstrap 4 beta](https://github.com/twbs/bootstrap/) from CDN
 * [Font Awesome 4.7](https://github.com/FortAwesome/Font-Awesome) from CDN
 * [Theme Hook Alliance](https://github.com/zamoose/themehookalliance)
 * [_s](https://github.com/Automattic/_s)
