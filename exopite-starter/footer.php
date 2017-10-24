@@ -11,8 +11,8 @@
 // Exit if accessed directly
 defined('ABSPATH') or die( 'You cannot access this page directly.' );
 
-    // Theme Hook Alliance
-    tha_content_bottom();
+// Theme Hook Alliance
+tha_content_bottom();
 
     ?>
 	</div><!-- #content -->
