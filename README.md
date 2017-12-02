@@ -59,6 +59,9 @@ Good luck and happy coding!
 CHANGELOG
 ---------
 
+= 20171202 - Dec 02 2017 =
+* Update: Update to Bootstrap 4.0.0 beta 2
+
 = 20170921 - Sep 21 2017 =
 * Update: Update to Bootstrap 4.0.0 beta
 
