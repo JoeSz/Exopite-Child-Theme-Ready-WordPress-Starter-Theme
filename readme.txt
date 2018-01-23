@@ -52,6 +52,9 @@ Now you're ready to go! The next step is easy to say, but harder to do: make an 
 
 == Changelog ==
 
+= 20180123 - Jan 23 2018 =
+* Update: Update to Bootstrap 4.0.0 (beta 3)
+
 = 20171202 - Dec 02 2017 =
 * **UPDATE**: Update to Bootstrap 4.0.0 beta 2
 
