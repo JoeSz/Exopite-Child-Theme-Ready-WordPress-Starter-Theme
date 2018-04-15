@@ -1,6 +1,6 @@
 # Exopite-starter child ready WordPress Theme based on _s
 ## This is a WordPress starter theme, based on _s with some extra features and child theme
-### Using _s (Underscores), Bootstrap 4, Theme Hook Alliance, JavaScript Hooks, Font Awesome 4.7
+### Using _s (Underscores), Bootstrap 4.1, Theme Hook Alliance, JavaScript Hooks, Font Awesome 4.7
 
 I like underscores, Bootstrap and Theme Hook Alliance. it is existing underscores and Bootstrap [UnderStrap](https://github.com/holger1411/understrap) or underscores and Theme Hook Alliance [hook_s](https://github.com/bradp/hook_s) but not together, and because I do not want to start always from scratch, I build it for myself and for anybody who want it.
 
@@ -18,7 +18,7 @@ My ultra-minimal CSS might make me look like theme tartare but that means less s
 * 2 sample CSS layouts in `layouts/` for a sidebar on either side of your content.
 * Smartly organized starter CSS in `style.css` that will help you to quickly get your design off the ground.
 * Licensed under GPLv2 or later. :) Use it to make something cool.
-* [Bootstrap 4 beta](https://github.com/twbs/bootstrap/) from CDN
+* [Bootstrap 4.1](https://github.com/twbs/bootstrap/) from CDN
 * [Font Awesome 4.7](https://github.com/FortAwesome/Font-Awesome) from CDN
 * [Theme Hook Alliance](https://github.com/zamoose/themehookalliance)
 * [_s](https://github.com/Automattic/_s)
