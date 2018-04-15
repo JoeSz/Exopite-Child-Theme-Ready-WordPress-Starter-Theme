@@ -4,7 +4,7 @@ Contributors: Joe Szalai, automattic, Theme Hook Alliance, Bootstrap core team
 Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments, bootstrap, themehookalliance
 
 Requires at least: 4.0
-Tested up to: 4.5.3
+Tested up to: 4.9.5
 Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -51,6 +51,9 @@ Then, update the stylesheet header in `style.css` and the links in `footer.php` 
 Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
 
 == Changelog ==
+
+= 20180415 - Apr 15 2018 =
+* Update: Update to Bootstrap 4.1.0
 
 = 20180123 - Jan 23 2018 =
 * Update: Update to Bootstrap 4.0.0 (beta 3)
