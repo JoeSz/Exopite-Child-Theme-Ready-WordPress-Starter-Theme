@@ -13,12 +13,10 @@ if ( ! function_exists( 'load_exopite_styles' ) ) {
          *
          * Get Bootstrap 4
          */
-        wp_register_style( 'bootstrap-4', "//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", false, '4.0.0' );
-        wp_enqueue_style( 'bootstrap-4' );
+        wp_enqueue_style( 'bootstrap-41', 'http' . ($_SERVER['SERVER_PORT'] == 443 ? 's' : '' ) . '://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css', false, '4.1.0' );
 
         /* Get font awsome */
-        wp_register_style( 'font-awesome-470', "//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", false, '470' );
-        wp_enqueue_style( 'font-awesome-470' );
+        wp_enqueue_style( 'font-awesome-470', 'http' . ($_SERVER['SERVER_PORT'] == 443 ? 's': '' ) . '://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', false, '470' );
         /*
          * Enqueue scripts and styles with automatic versioning.
          *
@@ -52,10 +50,9 @@ if ( ! function_exists( 'load_exopite_scripts' ) ) {
         wp_register_script( 'javascript-hooks', $javascript_hooks_js_uri, array(), filemtime( $javascript_hooks_js_path ), true);
         wp_enqueue_script( 'javascript-hooks' );
 
-        wp_enqueue_script( 'jquery-popper-1129', '//cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', array( 'jquery' ), '1.12.9', true );
+        wp_enqueue_script( 'jquery-popper-1140', 'http' . ($_SERVER['SERVER_PORT'] == 443 ? 's' : '' ) . '://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js', array( 'jquery' ), '1.14.0', true );
 
-        wp_register_script( 'bootstrap-4-js', "//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js", array( 'jquery', 'jquery-popper-1129' ), '4.0.0', true );
-        wp_enqueue_script( 'bootstrap-4-js' );
+        wp_enqueue_script( 'bootstrap-41-js', 'http' . ($_SERVER['SERVER_PORT'] == 443 ? 's' : '' ) . "://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js", array( 'jquery', 'jquery-popper-1140' ), '4.1.0', true );
 
         // May combine and minify them
         $exopite_navigation_js_uri = TEMPLATEURI . '/js/navigation.js';
