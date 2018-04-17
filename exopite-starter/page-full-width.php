@@ -18,7 +18,10 @@ defined('ABSPATH') or die( 'You cannot access this page directly.' );
 
 get_header();
 
-?>
+    // Theme Hook Alliance
+    tha_content_before();
+
+    ?>
 	<div class="container without-sidebar">
 		<div class="row">
 			<div id="primary" class="col-md-12 content-area">
@@ -51,6 +54,9 @@ get_header();
 			</div><!-- #primary -->
 		</div><!-- .row -->
 	</div><!-- .container -->
-<?php
+	<?php
+
+    // Theme Hook Alliance
+    tha_content_after();
 
 get_footer();
